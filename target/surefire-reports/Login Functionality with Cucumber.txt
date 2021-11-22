@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: Login Functionality with Cucumber
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 77.479 s <<< FAILURE! - in Login Functionality with Cucumber
+1-login with valid credantials information(Login Functionality with Cucumber)  Time elapsed: 5.876 s  <<< FAILURE!
+org.junit.ComparisonFailure: verify page subtitle  expected:<[Quick Launchpad]> but was:<[]>
+
+1-login with valid credantials information(Login Functionality with Cucumber)  Time elapsed: 5.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: verify page subtitle  expected:<[Dashboard]> but was:<[]>
+
+3- All users can see their own usernames in profile menu(Login Functionality with Cucumber)  Time elapsed: 4.238 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[John Doe]> but was:<[]>
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Login Functionality with Cucumber" time="77.479" tests="18" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="webdriver.chrome.driver" value="/Users/sunum/.m2/repository/webdriver/chromedriver/mac64/95.0.4638.69/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sunum/IdeaProjects/Horizon/target/test-classes:/Users/sunum/IdeaProjects/Horizon/target/classes:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/sunum/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/sunum/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/sunum/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/sunum/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sunum/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sunum/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sunum/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sunum/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/sunum/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/sunum/.m2/repository/io/github/bonigarcia/webdrivermanager/4.1.0/webdrivermanager-4.1.0.jar:/Users/sunum/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/sunum/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/sunum/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/sunum/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/sunum/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/sunum/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/sunum/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/sunum/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/sunum/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/sunum/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sunum/.m2/repository/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar:/Users/sunum/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sunum/IdeaProjects/Horizon/target/surefire/surefirebooter11280642263197249197.jar /Users/sunum/IdeaProjects/Horizon/target/surefire 2021-11-22T18-04-38_017-jvmRun1 surefire3881205261212323971tmp surefire_01093140622409544823tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/sunum/IdeaProjects/Horizon/target/test-classes:/Users/sunum/IdeaProjects/Horizon/target/classes:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/sunum/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/sunum/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/sunum/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/sunum/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/sunum/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sunum/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sunum/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sunum/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sunum/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/sunum/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/sunum/.m2/repository/io/github/bonigarcia/webdrivermanager/4.1.0/webdrivermanager-4.1.0.jar:/Users/sunum/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/sunum/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/sunum/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/sunum/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/sunum/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/sunum/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/sunum/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/sunum/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/sunum/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/sunum/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/sunum/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/sunum/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/sunum/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/sunum/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sunum/.m2/repository/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar:/Users/sunum/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sunum"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sunum/IdeaProjects/Horizon"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/sunum/IdeaProjects/Horizon/target/surefire/surefirebooter11280642263197249197.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="sunum"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/sunum/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/7c/cwdrvv_x7f9fl1j08bfnbw5r0000gn/T/"/>
+    <property name="idea.version" value="2021.2.1"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="/Users/sunum/IdeaProjects/Horizon"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/sunum/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="1-login with valid credantials information" classname="Login Functionality with Cucumber" time="5.876">
+    <failure message="verify page subtitle  expected:&lt;[Quick Launchpad]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: verify page subtitle  expected:<[Quick Launchpad]> but was:<[]>
+]]></failure>
+    <system-out><![CDATA[Nov 22, 2021 6:04:38 PM io.cucumber.junit.Cucumber <init>
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31mfile:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:13&amp#27;[0m# 1-login with valid credantials information
+&amp#27;[31mfile:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:15&amp#27;[0m# 1-login with valid credantials information
+&amp#27;[31mfile:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:37&amp#27;[0m# 3- All users can see their own usernames in profile menu
+
+18 Scenarios (&amp#27;[31m3 failed&amp#27;[0m, &amp#27;[32m15 passed&amp#27;[0m)
+62 Steps (&amp#27;[31m3 failed&amp#27;[0m, &amp#27;[32m59 passed&amp#27;[0m)
+1m17.481s
+
+
+org.junit.ComparisonFailure: verify page subtitle  expected:<[Quick Launchpad]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.intebella.step_def.Loginstep.verify_the_page(Loginstep.java:39)
+	at ✽.verify the page "Quick Launchpad"(file:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:8)
+
+org.junit.ComparisonFailure: verify page subtitle  expected:<[Dashboard]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.intebella.step_def.Loginstep.verify_the_page(Loginstep.java:39)
+	at ✽.verify the page "Dashboard"(file:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:8)
+
+org.junit.ComparisonFailure: expected:<[John Doe]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.intebella.step_def.Loginstep.verify_the_username(Loginstep.java:44)
+	at ✽.verify the username "John Doe"(file:///Users/sunum/IdeaProjects/Horizon/src/test/resources/Features/Login.feature:33)
+
+
+	this is coming from BEFORE
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 38102
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 22, 2021 6:04:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="1-login with valid credantials information" classname="Login Functionality with Cucumber" time="5.037"/>
+  <testcase name="1-login with valid credantials information" classname="Login Functionality with Cucumber" time="5.001">
+    <failure message="verify page subtitle  expected:&lt;[Dashboard]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: verify page subtitle  expected:<[Dashboard]> but was:<[]>
+]]></failure>
+    <system-out><![CDATA[	this is coming from BEFORE
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 45125
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 22, 2021 6:04:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="2-The user try to login with invalid credantials information" classname="Login Functionality with Cucumber" time="3.412"/>
+  <testcase name="2-The user try to login with invalid credantials information" classname="Login Functionality with Cucumber" time="3.701"/>
+  <testcase name="2-The user try to login with invalid credantials information" classname="Login Functionality with Cucumber" time="4.497"/>
+  <testcase name="3- All users can see their own usernames in profile menu" classname="Login Functionality with Cucumber" time="5.93"/>
+  <testcase name="3- All users can see their own usernames in profile menu" classname="Login Functionality with Cucumber" time="4.238">
+    <failure message="expected:&lt;[John Doe]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[John Doe]> but was:<[]>
+]]></failure>
+    <system-out><![CDATA[	this is coming from BEFORE
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 9810
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 22, 2021 6:05:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="3- All users can see their own usernames in profile menu" classname="Login Functionality with Cucumber" time="5.244"/>
+  <testcase name="4- &quot;Invalid username or password.&quot; error message should be displayed for invalid credentials" classname="Login Functionality with Cucumber" time="4.13"/>
+  <testcase name="4- &quot;Invalid username or password.&quot; error message should be displayed for invalid credentials" classname="Login Functionality with Cucumber" time="3.552"/>
+  <testcase name="4- &quot;Invalid username or password.&quot; error message should be displayed for invalid credentials" classname="Login Functionality with Cucumber" time="3.33"/>
+  <testcase name="5- User should see the password in bullet signs by default" classname="Login Functionality with Cucumber" time="3.059"/>
+  <testcase name="5- User should see the password in bullet signs by default" classname="Login Functionality with Cucumber" time="2.946"/>
+  <testcase name="5- User should see the password in bullet signs by default" classname="Login Functionality with Cucumber" time="3.415"/>
+  <testcase name="6-User land on the ‘Forgot Password’ page after clicking on the &quot;Forgot your password?&quot; link" classname="Login Functionality with Cucumber" time="3.022"/>
+  <testcase name="7- User can see &quot;Remember me on this computer&quot; link on the login page and it should be clickable" classname="Login Functionality with Cucumber" time="6.74"/>
+  <testcase name="8- Verify that user can use &quot;Enter&quot; key from their keyboard on the login page" classname="Login Functionality with Cucumber" time="4.344"/>
+</testsuite>
